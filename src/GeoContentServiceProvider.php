@@ -17,7 +17,6 @@ class GeoContentServiceProvider extends PackageServiceProvider
         $package
             ->name('geo-content')
             ->publishesServiceProvider(GeoContentServiceProvider::class)
-            ->hasConfigFile('geo-content');
 
         $this->publishes([
             __DIR__.'/../config/geo-content.php' => config_path('geo-content.php'),
