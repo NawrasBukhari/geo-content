@@ -10,10 +10,6 @@ class GeoContentServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
-        Blade::directive('country', function ($methodName, $data) {
-            return "<?php echo \NawrasBukhari\GeoContent\Facades\GeoContent::$methodName($data); ?>";
-        });
-
         $package
             ->name('geo-content')
             ->publishesServiceProvider(GeoContentServiceProvider::class)
