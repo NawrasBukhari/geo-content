@@ -38,7 +38,7 @@ it('can only show in country code', function () {
     expect(GeoContent::onlyShowInCountryCode('US'))->toBe(true);
 });
 
-it('can not show in country', function () {
+it('can not show in specific country', function () {
     expect(GeoContent::doNotShowInCountry('United States of America'))->toBe(false);
 });
 
@@ -46,6 +46,6 @@ it('can exclude continent code', function () {
     expect(GeoContent::excludeContinentCode('AM'))->toBe(true);
 });
 
-it('can only show in continent', function () {
+it('can only show in specific continent', function () {
     expect(GeoContent::onlyShowInContinent('Americas'))->toBe(true);
 });

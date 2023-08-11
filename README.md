@@ -35,7 +35,7 @@ return [
 
 Show content only to users from the United States
 ```php
-use NawrasBukhari\GeoContent\GeoContent;
+use NawrasBukhari\GeoContent\Facades\GeoContent;
 
 $geoContent = new GeoContent();
 
@@ -47,7 +47,7 @@ Allowing Content for Specific Continents
 Similarly, you can use the continent method to display content exclusively to users from particular continents:
 
 ```php
-use NawrasBukhari\GeoContent\GeoContent;
+use NawrasBukhari\GeoContent\Facades\GeoContent;
 
 $geoContent = new GeoContent();
 
@@ -60,7 +60,7 @@ Disallowing Content for Specific Countries
 You can use the `onlyShowInCountry()` or `onlyShowInCountryCode()` method to display content to users from specific country
 
 ```php
-use NawrasBukhari\GeoContent\GeoContent;
+use NawrasBukhari\GeoContent\Facades\GeoContent;
 
 // Create an instance of the GeoContent class
 $geoContent = new GeoContent();

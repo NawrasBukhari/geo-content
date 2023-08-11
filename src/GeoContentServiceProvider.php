@@ -2,7 +2,6 @@
 
 namespace NawrasBukhari\GeoContent;
 
-use Illuminate\Support\Facades\Blade;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -12,7 +11,7 @@ class GeoContentServiceProvider extends PackageServiceProvider
     {
         $package
             ->name('geo-content')
-            ->publishesServiceProvider(GeoContentServiceProvider::class)
+            ->publishesServiceProvider(GeoContentServiceProvider::class);
 
         $this->publishes([
             __DIR__.'/../config/geo-content.php' => config_path('geo-content.php'),
